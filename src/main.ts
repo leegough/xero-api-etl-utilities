@@ -1,7 +1,7 @@
 import { TokenSet, XeroClient } from "xero-node"
 import { refreshTokenSet, sendFileAttachmentsToXero, sendInvOrCRToXero, setActiveTenant } from "./apiFunctions"
 import storedToken from "./lib/tokenSet.json"
-import { createXeroDataObject } from "./DataObject"
+import { DataObject } from "./DataObject"
 import { getLogPath, getTenantIndex, writeResponseLog } from "./helpers"
 
 async function main(entity: string) {
@@ -15,7 +15,7 @@ async function main(entity: string) {
     xero = await refreshTokenSet(tokenSet)
     const activeTenantId = await setActiveTenant(tenantIndex, xero)
 
-    const { invoices, credits, fileAttachments } = await createXeroDataObject(logPath)
+    const { invoices, credits, fileAttachments } = await DataObject(logPath)
     console.log("Date Objects created")
 
     const { invRes, crRes } = await sendInvOrCRToXero(invoices, credits, xero, activeTenantId)
