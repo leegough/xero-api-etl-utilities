@@ -1,7 +1,7 @@
 import { constants, createReadStream, promises, writeFileSync } from "fs"
 import { TokenSet } from "xero-node"
-import { fetchChargesfromDB } from "./dbQueries"
-import { parseXlsxFiles } from "./parseXlsx"
+import { fetchChargesfromDB } from "./queries"
+import { parseXlsxFiles } from "./parse"
 import {
   ChargesAndPaymentsObjArrOBJ,
   TradingTerms,

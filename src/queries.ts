@@ -1,4 +1,4 @@
-import db from "./dbServer"
+import db from "./server"
 import { TZ_OFFSET } from "./helpers"
 import { ChargesAndPaymentsObj, ChargeWithCustomer } from "./types"
 
