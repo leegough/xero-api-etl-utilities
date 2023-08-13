@@ -1,7 +1,7 @@
 import { TokenSet, XeroClient } from "xero-node"
 import { refreshTokenSet, sendFileAttachmentsToXero, sendInvOrCRToXero, setActiveTenant } from "./apiFunctions"
 import storedToken from "./lib/tokenSet.json"
-import { createXeroDataObject } from "./createXeroDataObject"
+import { createXeroDataObject } from "./DataObject"
 import { getLogPath, getTenantIndex, writeResponseLog } from "./helpers"
 
 async function main(entity: string) {
