@@ -1,5 +1,5 @@
 import { CreditNote, CreditNotes, Invoice, Invoices, LineAmountTypes } from "xero-node"
-import { fetchDDInvoiceData } from "./dbQueries"
+import { fetchDDInvoiceData } from "./Queries"
 import { TZ_OFFSET, createFileAttachment, getDueDate, verifyCharges } from "./helpers"
 import { FileAttachment } from "./types"
 
