@@ -4,6 +4,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "pnpm": "^8.6.12"
+    "pnpm": "^8.6.12",
+    "xero-node": "^4.35.0"
   }
 }
