@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+pnpm@^8.6.12:
+  version "8.6.12"
+  resolved "https://registry.npmjs.org/pnpm/-/pnpm-8.6.12.tgz"
+  integrity sha512-Eza4C5SO/Xl5IYozupbZ5NOA5leBRPYxmXmXfe7G4/4uCkRLhks84rB33aitxNZU/uMrnDGGjwrLktoKvPjqHA==
+
 typescript@^5.1.6:
   version "5.1.6"
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.1.6.tgz"
