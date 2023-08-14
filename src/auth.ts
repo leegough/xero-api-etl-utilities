@@ -1,3 +1,4 @@
+import { XeroClient } from "xero-node/dist/XeroClient"
 import { writeTokenSetJson } from "./helpers"
 
 newAuth()
