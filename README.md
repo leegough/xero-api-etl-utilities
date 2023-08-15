@@ -1,4 +1,4 @@
-# xero-xls-utilities
+# xero-etl-utilities
 
 Helper utilities to parse workbook data to create invoice data objects required for the Xero API
 
