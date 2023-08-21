@@ -119,7 +119,8 @@ export async function createInvoice(date: Date, tillVariance: number) {
   const cigs = data.deptSales.find((d) => d.department.deptDisplayName === "Cigarettes & Tobacco")
   const instants = data.deptSales.find((d) => d.department.deptDisplayName === "Scratchies")
   const lotto = data.deptSales.find((d) => d.department.deptDisplayName === "Lotto")
-  const depts = [produce, deli, bakery, meat, takeaway, cigs, instants, lotto]
+  const homeware = data.deptSales.find((d) => d.department.deptDisplayName === "Homeware")
+  const depts = [produce, deli, bakery, meat, takeaway, cigs, instants, lotto, homeware]
   const deptsToInclude = depts.filter((d) => d !== undefined)
   const deptSalesLineItems = deptsToInclude.map((d) => ({
     description: `${d?.department.deptDisplayName} Department Sales`,
